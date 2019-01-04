@@ -1,0 +1,43 @@
+{
+  "name": "mintavizsga",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "nodemon node express.js",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@typopro/web-titillium": "^3.7.5",
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "electron-builder": "^20.36.2",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10",
+    "node": "^11.1.0",
+    "nodemon": "^1.18.4",
+    "vue": "^2.5.16",
+    "vue-axios": "^2.1.1",
+    "vuetify": "^1.2.5"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.0-beta.16",
+    "electron": "^2.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.8",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "main": "background.js"
+}
